@@ -1,0 +1,207 @@
+/* colours used */
+/* background dark grey #404040 */
+/* main body text light grey #8c8c8c */
+/* services  h2 option light grey #8c8c8c */
+/* portfolio card title h4 dark grey #383838 */
+/* portfolio card background color mid grey #686868 */
+/* social media nav orange #ff7733 */
+/* logo h1 h5 orange #ff7733 */
+/* section headings h6 orange #ff7733 */
+/* menu on hover colour white #e6e6e6 */
+/* project title on hover color #ff7733*/
+
+
+/*main styles*/
+
+body {
+  background-color: #404040;
+  color: #8c8c8c;
+}
+
+
+
+/* main header and title with logo */
+.logo {
+  width: 7em;
+}
+
+h1 {
+  color: #ff7733;
+  font-size: 2em;
+}
+
+h5 {
+  color: #ff7733;
+}
+
+/* social media nav */
+nav {
+  
+}
+ 
+nav li a {
+  padding: 10px;
+  width: 4em;
+  color: #ff7733;
+  margin: 20px 0 20px 50px;
+  transition: all .2s ease-in-out;
+}
+
+nav li a:hover {
+  color: #e6e6e6;
+  transform: scale(2);
+}
+
+/* navbar left  */
+.nav a {
+  color: #8c8c8c;
+  margin: -10px;
+}
+
+.nav a:hover {
+  color: #e6e6e6;
+}
+
+.custom-navbar{
+  margin: 25px 0 50px 0;
+}
+
+/* left column services descriptions */
+h2 {
+  font-size: 3em;
+}
+
+/*text turn white on hover as hidden detail appears*/
+h2:hover {
+  color: #e6e6e6;
+}
+
+.services-hidden-detail {
+    position: relative;
+    display: block;
+}
+
+.services-hidden-detail .services-hidden-detail-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #404040;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.services-hidden-detail:hover .services-hidden-detail-text {
+    visibility: visible;
+}
+
+/* about and contact section */
+h6,
+h6 a {
+  margin: 150px 0 50px 0;
+  color: #ff7733;
+}
+
+
+/* social media icon positioning */
+.column-nav a {
+  padding: 30px 0 0 10px;
+}
+
+/* right column cards */
+
+.card {
+  padding: 5px;
+  background-color:  #686868;
+}
+
+.card img {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: #383838;
+}
+
+/* image only cards with overlay project titles */
+.image-only-card {
+  position: relative;
+  width: 50%;
+}
+
+.overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e6e6e6;
+}
+
+.image-only-card:hover .overlay {
+  opacity: 0.85;
+}
+
+.overlay-text {
+  color: #ff7733;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: bold;
+}
+
+/* image and text project cards highlight and colour change */
+.image-text-card:hover {
+  background-color: #e6e6e6;
+  transition: .5s ease;
+  color: #383838;
+}
+
+.image-text-card card-title { 
+  color: #383838;
+}
+.image-text-card:hover .card-title { 
+  color: #ff7733;
+  transition: .5s ease;
+}
+
+
+
+
+/* text only card */
+.text-card:hover {
+  background-color: #e6e6e6;
+  transition: .5s ease;
+}
+
+.text-card card-title { 
+  color; #383838;
+}
+.text-card:hover .card-title { 
+  color: #ff7733;
+  transition: .5s ease;
+}
+
+/* quote only card */
+.quote-only-card:hover {
+  background-color: #e6e6e6;
+  color: #383838;
+  transition: .5s ease;
+}
